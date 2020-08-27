@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @Html.Partial("_navbar")
+   
+        @RenderBody()
+        
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

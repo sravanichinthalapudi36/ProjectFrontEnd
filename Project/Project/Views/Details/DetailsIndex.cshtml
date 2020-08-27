@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Project.Models.Items>
+@{
+    ViewBag.Title = "DetailsIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DetailsIndex</h2>
+
+<h2>All Productss</h2>
+@if (!Model.Any())
+{
+    <text>we Dont have any products yet</text>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Selected Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var list in Model)
+            {
+                <tr>
+                    @*<th>Product Name</th>*@
+
+                    <td>@Html.DisplayFor(selectedamount => list.selectedamount)  </td>
+                    @*<td> @Html.ActionLink(s.name, "Details", "Products1", new { id = s.id }, null)</td>*@
+                    <td> @Html.DisplayFor(name => list.name)  </td>
+                    <td> @Html.DisplayFor(price => list.price)  </td>
+                    <td> @Html.DisplayFor(totalprice => list.totolprice)  </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+
+}

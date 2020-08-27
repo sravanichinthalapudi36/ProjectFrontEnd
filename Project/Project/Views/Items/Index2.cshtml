@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index2</h2>
+<section>
+    <div class="container" style="margin-top:-18px">
+        <div class="mainContent">
+            <div class="row">
+                <div class="col-md-3">
+                    <aside class="leftmenu">
+                        <a href="index.html"><img src="~/Images/bethanylogo.png" /></a>
+                    </aside>
+                </div>
+                <div class="col-md-9">
+                    <div class="pie-label">Cherry pies</div>
+                    <div class="row cards-container">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="~/Images/products/cherrypiesmall.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="row card-header">
+                                        <span class="card-title">
+                                            @Html.ActionLink("Cheery pie", "Blueberry", "Items", new { @class = "pie-header" })
+                                        </span>
+                                        <span class="card-value">18.95$</span>
+                                    </div>
+                                    <p class="card-text">You loved this item</p>
+                                    <a href="#" class="btn add-cart">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="~/Images/products/peachpiesmall.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="row card-header">
+                                        <span class="card-title">
+                                            @Html.ActionLink("Peach Pie", "PumpkinPie", "Items", new { @class = "pie-header" })
+                                        </span>
+                                        <span class="card-value">30.75$</span>
+                                    </div>
+                                    <p class="card-text">Plain pleasure Pumpkin Pie</p>
+                                    <a href="#" class="btn add-cart">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="~/Images/products/christmasapplepiesmall.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="row card-header">
+                                        <span class="card-title">
+                                            @Html.ActionLink("christams Pies", "RhubarbPie", "Items", new { @class = "pie-header" })
+                                        </span>
+                                        <span class="card-value">21.95$</span>
+                                    </div>
+                                    <p class="card-text">loved it!!</p>
+                                    <a href="#" class="btn add-cart">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

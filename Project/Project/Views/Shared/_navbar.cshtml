@@ -1,0 +1,74 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        @*<div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Register", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Login", "Contact", "Home")</li>
+            </ul>
+        </div>*@
+
+        @*<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">All Pies<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Cheese cakes</a></li>
+                        <li><a href="#">Fruit Pies</a></li>
+                        <li><a href="#">Seasonal Pies</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">View All Pies</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>*@
+      
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">All Pies <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>@Html.ActionLink("Cakeese Pies", "Index", "Items")</li>
+                    <li>@Html.ActionLink("Fruit Pies", "Index2", "Items")</li>
+                    <li>@Html.ActionLink("Seasonal Pies", "", "")</li>
+                    <li class="divider"></li>
+                    <li>@Html.ActionLink("View AllPies", "", "Home")</li>
+                </ul>
+            </li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            <li>@Html.ActionLink("Register", "Index", "Home")</li>
+            <li>@Html.ActionLink("Login", "Index", "Home")</li>
+        </ul>
+    </div>
+</div>
+    </div>
+        @*<section>
+            <div class="maincontent">
+                <div class="row">
+                    <aside class="leftmenu">
+                        <a href="index.html"><img src="~/Images/bethanylogo.png" /></a>
+                    </aside>
+                    <article>
+                        <figure class="right-menu">
+                            <img src="~/Images/bethany-fullsize.jpg" width="735" alt="bethany in her pie shop" />
+                        </figure>
+
+                    </article>
+                </div>
+            </div>
+        </section>*@
+   

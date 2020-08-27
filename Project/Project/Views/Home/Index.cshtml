@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<section>
+    <div class="container" style="margin-top:45px">
+        <div class="mainContent">
+            <div class="row">
+                <div class="col-md-3">
+                    <aside class="leftmenu">
+                        <a href="index.html"><img src="~/Images/bethanylogo.png" /></a>
+                    </aside>
+                </div>
+                <div class="col-md-9">
+                    <article>
+                        <figure>
+                            <img src="~/Images/bethany-fullsize.jpg" width="850" alt="bethany in her pie shop" />
+                        </figure>
+
+                    </article>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-9">
+                        <div class="pie-label">Pies of the Week</div>
+                        <div class="small">Our weekly selection- just for you!</div>
+                        <div class="row cards-container">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="~/Images/products/applepie.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <div class="row card-header">
+                                            <span class="card-title">
+                                                @Html.ActionLink("apple pie", "ApplePie", "Home", new { @class = "pie-header" })
+                                            </span>
+                                            <span class="card-value">12.75$</span>
+                                        </div>
+                                        <p class="card-text">Our famous apple pies!</p>
+                                        @Html.ActionLink("Add to cart", "DetailsIndex", "Details", new { @class = "btn add-cart" })
+                                        @*<a href="#" class="btn add-cart">Add to cart</a>*@
+                                         
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="~/Images/products/pumpkinpiesmall.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <div class="row card-header">
+                                            <span class="card-title">
+                                                @Html.ActionLink("Pimpkin Pie", "PumpkinPie", "Home", new { @class = "pie-header" })
+                                            </span>
+                                            <span class="card-value">30.75$</span>
+                                        </div>
+                                        <p class="card-text">Our Halloween Favourite</p>
+                                        <a href="#" class="btn add-cart">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="~/Images/products/rhubarbpiesmall.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <div class="row card-header">
+                                            <span class="card-title">
+                                                @Html.ActionLink("RhubarbPie", "RhubarbPie", "Home", new { @class = "pie-header" })
+                                            </span>
+                                            <span class="card-value">12.75$</span>
+                                        </div>
+                                        <p class="card-text">My God, so sweet!</p>
+                                        @*<a href="#" class="btn add-cart">Add to cart</a>*@
+                                        @Html.ActionLink("Add to cart", "Index", "Details", new { @class = "btn add-cart" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+   </section>
+   
